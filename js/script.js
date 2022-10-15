@@ -1,4 +1,4 @@
-console.log("Witam wszystkich");
+console.log("Witam wszystkich. Ten kod jest już w repozytorium Git");
 
 let day = document.querySelector(".js-day").innerText;
 let topic = document.querySelector(".js-topic");
