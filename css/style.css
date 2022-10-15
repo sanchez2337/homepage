@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+}
+
+::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    max-width: 1000px;
+    background-color: #eee;
+    margin: 30px;
+    font-family: "Lato", sans-serif;
+    border-radius: 20px;
+    line-height: 2;
+    outline: 5px double crimson;
+    padding: 30px;
+}
+
+.section {
+    padding: 25px 0;
+}
+
+.heading {
+    margin: 0 auto;
+    border: 1px solid #333;
+    border-radius: 20px;
+    box-shadow: 0px 0px 17px 4px crimson;
+    box-sizing: border-box;
+    padding: 7px;
+    text-shadow: 1px 2px 5px crimson;
+    text-align: center;
+}
+
+.dark {
+    background-color: rgb(204, 203, 203);
+}
