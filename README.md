@@ -1,6 +1,6 @@
 # Adam Michałowski - Moja strona
 ![Krzysiek](images/Sport.jfif)
 ## Demo
-https://github.com/sanchez2337/homepage.git
+https://sanchez2337.github.io/homepage/
 ## Opis
 Można npi 
