@@ -1,6 +1,7 @@
 # Adam Michałowski - Moja strona
-![Krzysiek](images/Sport.jfif)
+![Hobby](images/zainteresowania.jpg)
 ## Demo
-https://github.com/sanchez2337/homepage.git
-## Opis
-Można npi 
+https://sanchez2337.github.io/homepage/
+##  
+It is website about my intrestings. It is a homework from You Code course.
+I used BEM convention in my project.
