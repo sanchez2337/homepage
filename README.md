@@ -1,4 +1,4 @@
-# Strona o moich zainteresowaniach
+# Webiste about my intrestings
 ![Hobby](images/zainteresowania.jpg)
 ## Demo
 https://sanchez2337.github.io/homepage/
