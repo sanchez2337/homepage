@@ -14,25 +14,22 @@
         changeBackgroundButton.addEventListener("click", toggleBackground);
     }
 
-    init ();
+    init();
 
     let day = document.querySelector(".js-day").innerText;
     let topic = document.querySelector(".js-topic");
 
-    switch (day) {
+    switch (day, topic) {
         case "poniedziałek":
         case "środa":
         case "piątek":
         case "niedziela":
-            topic.innerText = "programowania";
-            break;
+            return programowania;
         case "wtorek":
-            topic.innerText = "ekonomii";
-            break;
+            return ekonomii;
         case "czwartek":
-            topic.innerText = "inwestowania";
-            break;
+            return inwestowania;
         default:
-            topic.innerText = "sportu";
+            return sportu;
     }
 }
