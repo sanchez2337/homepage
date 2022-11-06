@@ -16,25 +16,26 @@
 
     init();
 
-    let day = document.querySelector(".js-day").innerText;
-    let topic = document.querySelector(".js-topic");
+    {
+        const day = document.querySelector(".js-day").innerText;
+        const topic = document.querySelector(".js-topic");
 
-    const changeTopic() {
-        switch (day, topic) {
+        let changeTopic;
+
+        switch (day) {
             case "poniedziałek":
             case "środa":
             case "piątek":
             case "niedziela":
-                return programowania;
+                changeTopic = "programowania";
             case "wtorek":
-                return ekonomii;
+                changeTopic = "ekonomii";
             case "czwartek":
-                return inwestowania;
+                changeTopic = "inwestowania";
             default:
-                return sportu;
+                changeTopic = "sportu";
         }
+        topic.innerText = changeTopic;
     }
-    
-    changeTopic.innerText = 
-    
 }
+
