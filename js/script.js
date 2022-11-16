@@ -28,19 +28,22 @@
                 case "środa":
                 case "piątek":
                 case "niedziela":
-                    return programowania;
+                    return = "programowania";
                 case "wtorek":
-                    return ekonomii;
+                    return = "ekonomii";
                 case "czwartek":
-                    return inwestowania;
+                    return = "inwestowania";
                 default:
-                    return sportu;
+                    return = "sportu";
             }
 
         }
 
         const result = changeTopic(day, topic);
-        updateResultText(day, result, topic)
+        // updateResultText(day, result, topic) - usuwam tak jak mówiłeś
+        const updateResultText = document.querySelector(".js-topic");
+        updateResultText.innerText = topic.classList.contains("day");
+        // jak by były dwie opcje to bym wpisał powyżej instrukcje warunkową: ternary, jak w tej funkcji ze zmiana tła ale że jest więcej opcji do wyboru to musiałbym chyba użyć switcha. Ale jak to teraz zapisać...? 
     }
 
 
