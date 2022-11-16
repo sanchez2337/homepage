@@ -17,25 +17,53 @@
     init();
 
     {
-        const day = document.querySelector(".js-day").innerText;
-        const topic = document.querySelector(".js-topic");
 
-        let changeTopic;
+        const changeTopic = (day, topic) => {
 
-        switch (day) {
-            case "poniedziałek":
-            case "środa":
-            case "piątek":
-            case "niedziela":
-                changeTopic = "programowania";
-            case "wtorek":
-                changeTopic = "ekonomii";
-            case "czwartek":
-                changeTopic = "inwestowania";
-            default:
-                changeTopic = "sportu";
+            const day = document.querySelector(".js-day").innerText;
+            const topic = document.querySelector(".js-topic");
+
+            switch (day) {
+                case "poniedziałek":
+                case "środa":
+                case "piątek":
+                case "niedziela":
+                    return programowania;
+                case "wtorek":
+                    return ekonomii;
+                case "czwartek":
+                    return inwestowania;
+                default:
+                    return sportu;
+            }
+
         }
-        topic.innerText = changeTopic;
+
+        const result = changeTopic(day, topic);
+        updateResultText(day, result, topic)
     }
+
+
+    // {
+    //     const day = document.querySelector(".js-day").innerText;
+    //     const topic = document.querySelector(".js-topic");
+
+    //     let changeTopic;
+
+    //     switch (day) {
+    //         case "poniedziałek":
+    //         case "środa":
+    //         case "piątek":
+    //         case "niedziela":
+    //             changeTopic = "programowania";
+    //         case "wtorek":
+    //             changeTopic = "ekonomii";
+    //         case "czwartek":
+    //             changeTopic = "inwestowania";
+    //         default:
+    //             changeTopic = "sportu";
+    //     }
+    //     topic.innerText = changeTopic;
+    // }
 }
 
